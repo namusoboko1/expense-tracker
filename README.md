@@ -1,4 +1,4 @@
-# Smart Expense Tracker
+# Expense Tracker
 
 > A browser-based expense tracker that allows users to manage, categorize, and visualize daily spending. Built with **vanilla JavaScript**  
 ---
