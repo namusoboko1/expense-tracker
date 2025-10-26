@@ -11,3 +11,13 @@ const arr = [
     date: new Date().getDate.toString() 
   }
 ];
+
+const expense_list = []; 
+
+//return expenses to controller
+export function getExpenses() {
+  arr.forEach(expense => {
+    expense_list.push({name: expense.name, amount: expense.amount});
+  });
+  return expense_list;
+}
