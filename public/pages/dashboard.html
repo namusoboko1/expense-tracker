@@ -22,18 +22,22 @@
           <p class="user-name">Nelson</p>
         </section>
       </aside>
+
       <main class="dynamic-container">
-        <section class="quick-access">
-          <h2>Quick Access</h2>
-          <div>
-            <button>New expense</button>
-            <button>Add receipt</button>
-          </div>
-        </section>
-        <section class="expense-list">
-          <div class="expense-list-title"></div>
-          <div class="expenses-cards js-expenses-cards"></div>
-        </section>
+        <div id="dashboard-view js-dashboard-view">
+          <section class="quick-access">
+            <h2>Quick Access</h2>
+            <div>
+              <button>New expense</button>
+              <button>Add receipt</button>
+            </div>
+          </section>
+
+          <section class="expense-list">
+            <div class="expense-list-title"></div>
+            <div class="expenses-cards js-expenses-cards"></div>
+          </section>
+        </div>
       </main>
 
       <script type="module" src="../js/dashboard.js"></script>
