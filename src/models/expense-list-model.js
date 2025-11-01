@@ -22,3 +22,7 @@ export function getExpenses(expenseCount=0) {
   });
   return expense_list;
 }
+
+export function getStoredExpensesCount() {
+  return arr.length;
+}
