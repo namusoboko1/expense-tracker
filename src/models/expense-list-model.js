@@ -15,7 +15,8 @@ const arr = [
 const expense_list = []; 
 
 //return expenses to controller
-export function getExpenses() {
+export function getExpenses(expenseCount=0) {
+  // TODO:use expenseCount to limit results
   arr.forEach(expense => {
     expense_list.push({name: expense.name, amount: expense.amount});
   });
