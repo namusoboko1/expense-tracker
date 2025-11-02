@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // render expense overview on page load
   expensesList.innerHTML = renderExpenses();
-  // initial render
-  // renderExpenses();
 
   overviewBtn.addEventListener('click', () => {
     console.log('overview clicked');
