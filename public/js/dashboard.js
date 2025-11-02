@@ -3,13 +3,13 @@ import { expenseCount, renderExpenses} from '../../src/controllers/expense-list-
 document.addEventListener('DOMContentLoaded', () => {
   const storedExpensesCount = expenseCount();
   console.log("Stored expenses number: ", storedExpensesCount);
-  
+
   if (storedExpensesCount) {
     renderExpenses(storedExpensesCount);
   }
 
   const  overviewBtn = document.querySelector('.js-overview-btn');
-  const expensesCards = document.querySelector('.js-expenses-cards');
+  const expensesList = document.querySelector('.js-expenses-list');
 
   // initial render
   // renderExpenses();
@@ -17,6 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
   overviewBtn.addEventListener('click', () => {
     console.log('overview clicked');
     const expensesMarkup = renderExpenses();
-    expensesCards.innerHTML = expensesMarkup;
+    expensesList.innerHTML = expensesMarkup;
   });
 });
