@@ -23,8 +23,6 @@ export function getExpenses(expenseCount=0) {
       date: expense.date
     };
   });
-  console.log("ExpenseList(model): ", expense_list);
-  return expense_list;
 }
 
 export function getStoredExpensesCount() {
