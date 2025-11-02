@@ -4,13 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const storedExpensesCount = expenseCount();
   console.log("Stored expenses number: ", storedExpensesCount);
 
-  if (storedExpensesCount) {
-    renderExpenses(storedExpensesCount);
-  }
-
+  
   const  overviewBtn = document.querySelector('.js-overview-btn');
   const expensesList = document.querySelector('.js-expenses-list');
 
+  if (storedExpensesCount) {
+    renderExpenses(storedExpensesCount);
+  }
+  
   // initial render
   // renderExpenses();
 
