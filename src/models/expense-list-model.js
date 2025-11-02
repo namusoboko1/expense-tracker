@@ -15,7 +15,7 @@ const arr = [
 //return expenses to controller
 export function getExpenses(expenseCount=0) {
   // TODO:use expenseCount to limit results
-  return arr.map(expense => {
+  const expenseList = arr.map(expense => {
     return {
       name: expense.name,
       amount: expense.amount,
@@ -23,6 +23,7 @@ export function getExpenses(expenseCount=0) {
       date: expense.date
     };
   });
+  return expenseList;
 }
 
 export function getStoredExpensesCount() {
