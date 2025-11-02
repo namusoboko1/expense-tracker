@@ -25,3 +25,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+/* toggle views[dashboard-overview, expense-form-view full-expense-list-view]  */
+.hidden {
+  display: none;
+}
