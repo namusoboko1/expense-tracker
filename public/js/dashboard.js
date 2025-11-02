@@ -8,10 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const  overviewBtn = document.querySelector('.js-overview-btn');
   const expensesList = document.querySelector('.js-expenses-list');
 
-  if (storedExpensesCount) {
-    expensesList.innerHTML = renderExpenses(storedExpensesCount);
-  }
-
+  // render expense overview on page load
+  expensesList.innerHTML = renderExpenses();
   // initial render
   // renderExpenses();
 
