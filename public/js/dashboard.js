@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const  overviewBtn = document.querySelector('.js-overview-btn');
   const expensesBtn = document.querySelector('.js-expenses-btn');
 
-  const dashboardView = document.querySelector('.js-dashboard-view"');
+  const dashboardView = document.querySelector('.js-dashboard-view');
   const expenseFormView = document.querySelector('.js-expense-form-view');
   const allExpensesView = document.querySelector('.js-all-expenses-view');
   
