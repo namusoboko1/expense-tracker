@@ -5,9 +5,9 @@ export function renderExpenseList(expense_list) {
     expensesHTML += `
       <tr class="expense-item">
         <td>${expense_item.name}</td>
-        <td>${expense_item.amount}</td>
         <td>${expense_item.category}</td>
         <td>${expense_item.date}</td>
+        <td>${expense_item.amount}</td>
       </tr>
     `
   });
