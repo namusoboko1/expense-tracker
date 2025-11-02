@@ -1,4 +1,4 @@
-const arr = [
+const expenseArr = [
   { id: 1, 
     name: 'Hosting Website', 
     amount: 300, 
@@ -15,7 +15,7 @@ const arr = [
 //return expenses to controller
 export function getExpenses(expenseCount=0) {
   // TODO:use expenseCount to limit results
-  const expenseList = arr.map(expense => {
+  const expenseList = expenseArr.map(expense => {
     return {
       name: expense.name,
       amount: expense.amount,
@@ -27,5 +27,5 @@ export function getExpenses(expenseCount=0) {
 }
 
 export function getStoredExpensesCount() {
-  return arr.length;
+  return expenseArr.length;
 }
