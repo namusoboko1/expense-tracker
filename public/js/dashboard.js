@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const expensesList = document.querySelector('.js-expenses-list');
 
   if (storedExpensesCount) {
-    renderExpenses(storedExpensesCount);
+    expensesList.innerHTML = renderExpenses(storedExpensesCount);
   }
-  
+
   // initial render
   // renderExpenses();
 
