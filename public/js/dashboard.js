@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dashboardView = document.querySelector('.js-dashboard-view"');
   const expenseFormView = document.querySelector('.js-expense-form-view');
   const allExpensesView = document.querySelector('.js-all-expenses-view');
-
+  
   const expensesList = document.querySelector('.js-expenses-list');
 
   // render expense overview on page load
@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   expensesBtn.addEventListener('click', () => {
-    showView();
+    showView(allExpensesView);
   });
+
+  function showView(targetView) {
+    hideAllViews();
+    targetView.classList.remove('hidden');
+  }
 });
