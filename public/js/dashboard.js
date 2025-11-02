@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const expensesMarkup = renderExpenses();
     console.log("ExpenseList(dashboard): ", expensesMarkup);
     expensesList.innerHTML = expensesMarkup;
+    showView(dashboardView);
   });
 
   expensesBtn.addEventListener('click', () => {
