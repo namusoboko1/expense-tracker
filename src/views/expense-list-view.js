@@ -9,5 +9,6 @@ export function renderExpenseList(expense_list) {
       </div>
     `
   });
+  console.log("ExpenseHTML markup(view): ", expensesHTML);
   return expensesHTML;
 }
