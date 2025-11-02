@@ -2,6 +2,8 @@ import { expenseCount, renderExpenses} from '../../src/controllers/expense-list-
 
 document.addEventListener('DOMContentLoaded', () => {
   const  overviewBtn = document.querySelector('.js-overview-btn');
+  const expensesBtn = document.querySelector('.js-expenses-btn');
+
   const expensesList = document.querySelector('.js-expenses-list');
 
   // render expense overview on page load
@@ -12,5 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const expensesMarkup = renderExpenses();
     console.log("ExpenseList(dashboard): ", expensesMarkup);
     expensesList.innerHTML = expensesMarkup;
+  });
+
+  expensesBtn.addEventListener('click', () => {
+    showView();
   });
 });
