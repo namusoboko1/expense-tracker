@@ -1,6 +1,13 @@
-import { renderExpenses} from '../../src/controllers/expense-list-contoller.js';
+import { expenseCount, renderExpenses} from '../../src/controllers/expense-list-contoller.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+  const storedExpensesCount = expenseCount();
+  console.log("Stored expenses number: ", storedExpensesCount);
+  
+  if (storedExpensesCount) {
+    renderExpenses(storedExpensesCount);
+  }
+
   const  overviewBtn = document.querySelector('.js-overview-btn');
   const expensesCards = document.querySelector('.js-expenses-cards');
 
