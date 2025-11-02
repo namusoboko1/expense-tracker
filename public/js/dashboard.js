@@ -28,4 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
     hideAllViews();
     targetView.classList.remove('hidden');
   }
+
+  function hideAllViews() {
+    const views = [dashboardView, expenseFormView, allExpensesView];
+
+    views.forEach(view => {
+      view.classList.add('hidden');
+    });
+  }
 });
