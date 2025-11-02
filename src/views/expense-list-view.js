@@ -3,12 +3,12 @@ export function renderExpenseList(expense_list) {
 
   expense_list.forEach(expense_item => {
     expensesHTML += `
-      <div class="expense-item">
-        <span>${expense_item.name}</span>
-        <span>${expense_item.amount}</span>
-        <span>${expense_item.category}</span>
-        <span>${expense_item.date}</span>
-      </div>
+      <tr class="expense-item">
+        <td>${expense_item.name}</td>
+        <td>${expense_item.amount}</td>
+        <td>${expense_item.category}</td>
+        <td>${expense_item.date}</td>
+      </tr>
     `
   });
   console.log("ExpenseHTML markup(view): ", expensesHTML);
