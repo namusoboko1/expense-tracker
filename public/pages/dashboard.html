@@ -13,9 +13,9 @@
         </div>
         <nav class="nav-bar-buttons">
           <button class="js-overview-btn">Overview</button>
-          <button>Expenses</button>
-          <button>Goals</button>
-          <button>Settings</button>
+          <button class="js-expenses-btn">Expenses</button>
+          <button class="js-goal-btn">Goals</button>
+          <button class="js-settings-btn">Settings</button>
         </nav>
         <section class="user-profile">
           <img src="../assets/profile.jpg" alt="user photo">
@@ -49,7 +49,7 @@
           </table>
         </div>
 
-        <div id="expense-form-view" class="js-expense-form-view">
+        <div id="expense-form-view" class="js-expense-form-view hidden">
           <h2>New Expense</h2>
 
           <form id="expense-form">
@@ -80,7 +80,7 @@
           </form>
         </div>
 
-        <div id="all-expenses-view" class="js-all-expenses-view">
+        <div id="all-expenses-view" class="js-all-expenses-view hidden">
           <div>
             <h2>Expenses</h2>
             <button type="button">Add Expense</button>
