@@ -20,6 +20,7 @@ export function getExpenses(expenseCount=0) {
   arr.forEach(expense => {
     expense_list.push({name: expense.name, amount: expense.amount});
   });
+  console.log("ExpenseList(model): ", expense_list);
   return expense_list;
 }
 
