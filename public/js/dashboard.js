@@ -3,6 +3,7 @@ import { expenseCount, renderExpenses} from '../../src/controllers/expense-list-
 document.addEventListener('DOMContentLoaded', () => {
   const  overviewBtn = document.querySelector('.js-overview-btn');
   const expensesBtn = document.querySelector('.js-expenses-btn');
+  const addExpenseBtn = document.querySelector('.js-new-expense-btn');
 
   const dashboardView = document.querySelector('.js-dashboard-view');
   const expenseFormView = document.querySelector('.js-expense-form-view');
@@ -24,6 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
   expensesBtn.addEventListener('click', () => {
     showView(allExpensesView);
   });
+
+  addExpenseBtn.addEventListener('click', () => {
+    showView(expenseFormView);
+  })
 
   function showView(targetView) {
     hideAllViews();
