@@ -31,6 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
     showView(expenseFormView);
   })
 
+  cancelBtn.addEventListener('click', () => {
+    showView(dashboardView);
+  });
+
+
   function showView(targetView) {
     hideAllViews();
     targetView.classList.remove('hidden');
