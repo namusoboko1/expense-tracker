@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
     showView(dashboardView);
   });
 
+  document.getElementById('add-expense-btn').
+  addEventListener('click', addNewExpense);
 
   function showView(targetView) {
     hideAllViews();
