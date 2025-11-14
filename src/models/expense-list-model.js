@@ -30,6 +30,6 @@ export function getStoredExpensesCount() {
   return expenseArr.length;
 }
 
-function saveExpense(expenseData) {
+export function saveExpense(expenseData) {
   expenseArr.push(expenseData);
 }
