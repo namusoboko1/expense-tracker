@@ -1,4 +1,5 @@
 import { expenseCount, renderExpenses} from '../../src/controllers/expense-list-contoller.js';
+import { handleAddExpense } from '../../src/controllers/expense-form-controller.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const  overviewBtn = document.querySelector('.js-overview-btn');
@@ -36,7 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.getElementById('add-expense-btn').
-  addEventListener('click', addNewExpense);
+    addEventListener('click', () => {
+      handleAddExpense({ id: 4, 
+      name: 'Samsung phone', 
+      amount: 2000, 
+      category: 'Electronics', 
+      date: new Date().getDate().toString() 
+    });
+  });
 
   function showView(targetView) {
     hideAllViews();
