@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showView(dashboardView);
   });
 
-  document.querySelector('.js-new-expense-btn').
+  document.getElementById('add-expense-btn').
     addEventListener('click', () => {
       handleAddExpense({ id: 4, 
       name: 'Samsung phone', 
