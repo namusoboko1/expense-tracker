@@ -29,3 +29,7 @@ export function getExpenses(expenseCount=0) {
 export function getStoredExpensesCount() {
   return expenseArr.length;
 }
+
+function saveExpense(expenseData) {
+  expenseArr.push(expenseData);
+}
