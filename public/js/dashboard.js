@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const dashboardView = document.querySelector('.js-dashboard-view');
   const expenseFormView = document.querySelector('.js-expense-form-view');
   const allExpensesView = document.querySelector('.js-all-expenses-view');
+
+  const form = document.getElementById('expense-form');
   
   const expensesList = document.querySelector('.js-expenses-list');
 
@@ -36,13 +38,20 @@ document.addEventListener('DOMContentLoaded', () => {
     showView(dashboardView);
   });
 
-  document.getElementById('add-expense-btn').
-    addEventListener('click', () => {
-      handleAddExpense({ id: 4, 
-      name: 'Samsung phone', 
-      amount: 2000, 
-      category: 'Electronics', 
-      date: new Date().getDate().toString() 
+  form.addEventListener('submit', (e) => {
+    e.preventDefault(); //prevents page reload
+
+    const name = document.getElementById('expense-name').value;
+    const amount = document.getElementById('expense-amount').value;
+    const category = document.getElementById('expense-category').value;
+    const date = document.getElementById('expense-date').value;
+
+    handleAddExpense({
+      id: Date.now(),
+      name,
+      amount: Number(amount),
+      category,
+      date
     });
   });
 
