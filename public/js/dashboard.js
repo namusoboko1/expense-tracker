@@ -46,13 +46,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const category = document.getElementById('expense-category').value;
     const date = document.getElementById('expense-date').value;
 
-    handleAddExpense({
+    const formData = {
       id: Date.now(),
       name,
       amount: Number(amount),
       category,
       date
-    });
+    };
+
+    handleAddExpense(formData);
   });
 
   function showView(targetView) {
