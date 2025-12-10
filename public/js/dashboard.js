@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const name = document.getElementById('expense-name').value;
     const amount = document.getElementById('expense-amount').value;
-    const category = document.getElementById('expense-category').value;
+    const category = document.getElementById('expense-catergory').value;
     const date = document.getElementById('expense-date').value;
 
     const formData = {
@@ -53,6 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
       category,
       date
     };
+
+    console.log(formData);
 
     handleAddExpense(formData);
   });
