@@ -8,6 +8,7 @@ export function renderExpenseList(expense_list) {
         <td>${expense_item.category}</td>
         <td>${expense_item.date}</td>
         <td>${expense_item.amount}</td>
+        <td> <button class="js-del-expense-btn del-expense-btn">Delete</button>
       </tr>
     `
   });
