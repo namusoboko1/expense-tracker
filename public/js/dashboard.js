@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(formData);
 
     handleAddExpense(formData);
+
+    form.reset();
   });
 
   function showView(targetView) {
